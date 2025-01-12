@@ -1,0 +1,193 @@
+.modal {
+  background: white;
+  border-radius: 8px;
+  min-width: 600px;
+  max-width: 90vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  user-select: none;
+  transition: height 0.3s ease;
+}
+
+.minimized {
+  min-width: 300px;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+  background: #f8f9fa;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.controlButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #666;
+}
+
+.controlButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.controlButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.instruction {
+  color: #666;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.coordinatesTable {
+  margin-top: 1rem;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.coordinatesTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coordinatesTable th,
+.coordinatesTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.coordinatesTable th {
+  background: #f8f9fa;
+  font-weight: 500;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.actionButton:hover {
+  background: #f0f0f0;
+}
+
+.footer {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.generateButton {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generateButton:hover {
+  background: #4338ca;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  color: #666;
+}
+
+.modal {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: white;
+  border-radius: 8px;
+  min-width: 600px;
+  max-width: 90vw;
+  cursor: move;
+  z-index: 1001;
+}
+
+.tableContainer {
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.coordinatesTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.coordinatesTable th,
+.coordinatesTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.coordinatesTable th {
+  background: #f8f9fa;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.wpCell {
+  width: 80px;
+  font-weight: 500;
+}
+
+.coordCell {
+  min-width: 200px;
+}
+
+.distanceCell {
+  width: 120px;
+  text-align: right;
+}
+
+.actionCell {
+  width: 60px;
+  text-align: center;
+}

@@ -2,6 +2,13 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --color-grey-0: #fff;
+  --color-grey-100: #f3f4f6;
+  --color-grey-500: #6b7280;
+  --backdrop-color: rgba(0, 0, 0, 0.3);
+  --border-radius-lg: 0.9rem;
+  --border-radius-sm: 0.4rem;
+  --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
 }
 
 body {
